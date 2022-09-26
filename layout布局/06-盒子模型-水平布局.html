@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-水平布局</title>
+    <style>
+        .outer{
+            width: 800px;
+            height: 200px;
+            border: 1px red solid;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* 
+                元素的水平防线的布局
+                    元素在其父元素中水平方向的位置由以下几个属性共同决定
+                        margin-left
+                        border-left
+                        padding-left
+                        width
+                        padding-right
+                        border-right
+                        margin-right
+                        
+                        一个元素在其父元素中，水平布局必须毛南族以下等式
+                         margin-left
+                        border-left
+                        padding-left
+                        width
+                        padding-right
+                        border-right
+                        margin-right
+                      这7个值的和等于父元素的width(必须满足)
+                        0 + 0 + 0 + 200 + 0 + 0 + 0 = 800
+                            以上等式必须满足，如果相加结果使等式不成立，则成为过渡约束，则等式会自动调整
+                                    调整的情况：
+                                        如果这七个之中没有为 auto 的情况，则浏览器会自动调整margin-right值以使其满足
+                                这7个值中有三个值可以设置为auto
+                                    如果某个值为auto ，则会自动调整为auto 的哪个值以使等式成立
+                                    0+0+0+auto+0+0=800
+                                    则auto 变为800
+                                    若将一个宽度和一个外边距设置为auto,则宽度会调整到最大，设置为auto的外边距会自动为0
+                                    若三个值都为auto，则外边距都为0，宽度最大
+
+                                    若两个边距为auto 宽度固定，则外边距平分剩余位置
+                                        所以我们利用这个特点来使一个元素在其父元素中水平居中
+
+
+                    
+
+            */  
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* [属性名] 选择含有直嘀咕属性的元素 
+        [属性名=属性值] 选择含有指定属性和属性值的元素
+        [属性名^=属性值] 选择属性值以指定值开头的元素
+        [属性名$=属性值] 选择属性值以指定值结尾的元素
+        [属性名*=属性值] 选择属性值中含有某值的元素的元素*/
+    
+        [title]{
+        color: chartreuse;
+    }
+    [title=aaa]{
+        color: coral;
+    }
+    p[title^=aa]{
+        color: brown;
+    }
+    p[title$=a]{
+        color: chocolate;
+    }
+    p[title*=a]{
+        color: darkgreen;
+    }
+
+</style>
+</head>
+<body>
+   
+    
+    <span title="aaa">a</span>
+    <span title="a">b</span>
+    <span title="aa">c</span>
+    <span>d</span>
+    <span>e</span>
+    <span>f</span>
+    <span>g</span>
+</body>
+</html>

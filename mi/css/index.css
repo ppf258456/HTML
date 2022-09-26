@@ -1,0 +1,217 @@
+/* 主页样式 */
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+.header > .nav-bar{
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+
+}
+.nav-bar li{
+    float: left;
+}
+.header > .nav-bar > .right-nav{
+    float: right;
+}
+
+ .Separator-line{
+    width: 1px;
+    height: 12px;
+    background-color: #424242;
+    margin: 14px 8px;
+   
+   
+}
+.nav-bar a{  
+    text-decoration: none;
+    display: block;
+    color:#b0b0b0;   
+}
+.nav-bar a:hover{
+    color: #fff;
+}
+.highlight{
+    background-color: #424242;
+    width: 120px;
+    text-align: center;
+}
+.right-nav > .li-menu > .highlight:hover{
+    
+    background-color: #fff;
+    color: #ff7700;
+}
+.menu-content{
+    color: #333;
+}
+.other{
+    background-color: #333;
+}
+
+.triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;  
+    border-right: 5px solid transparent;  
+    border-bottom: 10px solid #fff; 
+    position: absolute;
+    top: 30px;
+    left: 745px;
+    z-index: 999;
+   
+    
+  }
+  .box1{
+    display: none;
+    padding: 18px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    position:absolute;
+    left: 700px;
+    z-index: 999;
+  }
+  .c:hover .triangle, .c:hover .box1{
+    display: block;
+  }
+  .menu-content{
+    position: absolute;
+    top: 40px;
+    left: 910px;
+    width: 316px;
+    height: 60px;
+    padding-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    display: none;
+    text-align: center;
+    z-index: 999;
+  }
+  .li-menu:hover  .menu-content{
+    display: block;
+  }
+  .ul-logo{
+    float: left;
+    margin: 22px 0 0 0 ;
+  }
+  .header-nav{
+    width: 850px;
+    height: 100px;
+    /* background-color: #bfa; */
+    float: left;
+  }
+  .header-nav ul{
+   padding-top: 12px;
+   padding-left: 30px;
+  }
+  .header-nav ul .nav-list{
+    width: 127px;
+    height: 88px;
+    padding-right: 15px;
+  }
+  .header-nav li{
+    float: left;
+   
+  }
+
+.site-header .ul-nav-list :not(.nav-list) a{
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 26px 10px 38px;  
+}
+.serch{
+    float: right;
+    margin-top: 25px;
+    width: 296px;
+    height: 50px;
+}
+.serch input{
+    width: 218px;
+    height: 48px;
+    padding: 0 10px;
+    border: black 1px solid;
+    float: left;
+    /* border-right:0 ; */
+    /* border: none; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .3); */
+}
+.fa-search{
+    float: right;
+    text-align: center;
+    width: 50px;
+    height: 48px;
+    line-height: 50px;
+      padding: 0 2px;
+    border: 1px solid black;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .3); */   
+}
+.serch:hover{
+    /* margin: 0 1px 1px 0; */
+   border: black 1px solid;
+   /* position: relative; */
+}
+.fa-search:hover{
+    /* width: 50px; */
+    /* height: 50px; */
+    /* padding: 0; */
+    color: #fff;
+    background-color: #ff7700;
+}
+.site-category{
+    width: 234px;
+    height: 460px;
+    background-color: #A19F9F;
+    position: relative;
+}
+.site-category-list{
+    padding: 20px 0;
+    position: relative;
+}
+.site-category-list > li > a{
+    display: block;
+    width: 204px;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+   
+    text-decoration: none;
+    color: #fff;
+}
+.site-category-list > li > a:hover{
+    background-color: #ff7700;
+}
+.fa-chevron-right{
+    /* position: relative; */
+    float: right;
+    line-height:42px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.site-category-list > .children{
+    position: absolute;
+    left: 234px;
+    top:0px ;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    height: 458px;
+}
+
+.site-category-list > .children > ul > li{
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    float: left;
+}
+
+.site-category-list > .children > ul > li > a{
+    float: left;
+    height: 40px;
+}
+.site-category-list > .children > ul > li >a > span{
+    float: left;
+}
+ 

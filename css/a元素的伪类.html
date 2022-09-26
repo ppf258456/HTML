@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* :link 用来表示没访问过的链接（正常打的链接） */
+    a:link{
+        color: red;
+    }
+    /* :visited 用来表示访问过的链接 
+        
+        由于隐私的原因 所以:visited这个伪类只能修改链接的颜色*/
+    a:visited{
+
+        color: green;
+    }
+    /* :hover   用来表示鼠标移入的状态 */
+    a:hover{
+        color:cadetblue;
+    }
+    /* :active  用来表示鼠标点击 */
+    a:active{
+        color: blanchedalmond;
+    }
+    /* 总结： 从a标签的状态分析
+                1 当标签href有值并且未被访问时，具备了:link属性
+                2 当标签href有值并且被访问过时，则具备了:link :visited两种状态
+                3 标签访问过并且移动到上面时 则具备了:link :visited :hover 三种状态
+                4 标签访问过且鼠标点击到该链接时 则具备了:link :visited :hover :active 四种状态
+               从CSS样式分析
+                同样的选择器，后面的会覆盖前面的 所以，应将复杂的写在简单的后面，否则复杂的会被简单的覆盖  */
+</style>
+</head>
+<!-- 
+    1.没有访问过的链接
+    2.访问过的链接
+ -->
+<body>
+    <a href="https://www.bilibili.com">哔哩哔哩</a>
+    <br>
+    <a href="https://www.baidu.com">百度</a>
+    <br>
+    <a href="https://www.4399.com">4399</a>
+</body>
+</html>

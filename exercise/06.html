@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图(半实现)</title>
+    <link rel="stylesheet" href="../layout布局/css/reset.css">
+    <style>
+        .img-list{
+            margin: 100px auto;
+            width: 590px;
+            height: 470px;
+            /* 开启ul的相对定位,目的是使pointer可以相对于ul定位而不是相对于初始包含块（html）去定位 */
+            position: relative;
+        }
+        /* 设置li */
+        li{
+            position: absolute;
+        }
+        /* 通过修改元素的层级来选择指定图片 */
+        .img-list li:nth-chlid(){
+            z-index:1;
+        }
+        /* 设置导航点的大小 */
+        .pointer{
+            position: absolute;
+            z-index: 999;
+            bottom: 10px;
+            left: 25px;
+
+        }
+        .pointer a{
+            /* display: block; */
+            /* 设置浮动 导致行内元素变为块级元素 */
+            float: left;
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, .4);
+            /* 将背景颜色只设置到内容区，边框和内边距不在有背景颜色 */
+            background-clip: content-box;
+            border-radius: 50%;
+            margin:0  2px;
+            border: 2px solid transparent;
+        }
+        .pointer a.active,
+        .pointer a:hover{
+            background-color: #ffffff;
+            border: 2px solid  rgba(255, 255, 255, .4);
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="#"><img src="../exercise/所需图片/07.png"></a></li>
+        <li><a href="#"><img src="../exercise/所需图片/08.png"></a></li>
+        <li><a href="#"><img src="../exercise/所需图片/09.png"></a></li>
+        <li><a href="#"><img src="../exercise/所需图片/10.png"></a></li>
+        <li><a href="#"><img src="../exercise/所需图片/11.png"></a></li>
+        <li><a href="#"><img src="../exercise/所需图片/12.png"></a></li>
+        <li><a href="#"><img src="../exercise/所需图片/13.png"></a></li>
+        <li><a href="#"><img src="../exercise/所需图片/14.png"></a></li>
+       <div class="pointer">
+        <a class="active" href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a> 
+       </div>
+    </ul>
+</body>
+</html>

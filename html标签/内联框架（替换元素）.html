@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 替换元素 -->
+    <!-- frameboder =0  内联框架的边框 src 为路径 -->
+    <iframe src="https://www.bilibili.com" width="400" height="400" frameborder="0"></iframe>
+    <!-- 音频视频标签 -->
+    <!-- 引入外部音频文件  controls 是否允许用户控制播放 
+        autoplay 打开页面是否自动播放 但大部分不支持 
+        loop 是否循环播放 type=>类型/格式-->
+    <audio src="" controls autoplay></audio>
+    <!-- 引入视频文件 -->
+    <video src=""></video>
+    <img src=" " alt="">
+    <audio controls>
+        <!-- 该浏览器不支持播放音视频，请升级浏览器 -->
+        <source src="">
+        <!-- <source src=" "> -->
+        <!-- 多条source处理兼容问题 -->
+        <!-- <embed src=" " type="" width="200" height="50"> -->
+    </audio>
+    <!-- 处理ie8兼容 -->
+    <embed src=" " type="" width="200" height="50">
+        <video controls>
+            <!-- 该浏览器不支持播放音视频，请升级浏览器 -->
+            <source src=" ">
+            <source src=" ">
+            <!-- 多条source处理兼容问题 -->
+            <!-- <embed src=" " type="" width="200" height="50"> -->
+        </video>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=92309&auto=1&height=66"></iframe>
+</body>
+</html>

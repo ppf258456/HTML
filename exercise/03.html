@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../layout布局/css/reset.css">
+    <title>网易新闻右侧</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        /* 容器样式 */
+
+        .news-wrapper{
+                width: 300px;
+                height: 357px;
+
+                margin: 50px auto;
+                background-color: lightgoldenrodyellow;
+                border-top: 1px solid #dddddd;
+        }
+        .news-title{
+            /* 为了边框和为你做宽度一致，需要将h2转换为行内块元素 */
+            display: inline-block;
+            height: 30px;
+            border-top: 1px solid #F04343;
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+        /* 超链接样式 */
+        .news-title a{
+            
+            color: black;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        /* 设置图片容器高度 */
+        .news-img{
+            /* 指定高度，防止文字上移导致的下面文字上移 */
+            height: 150px;
+        }
+        /* 设置图片文字效果 */
+        .news-img .img-title{
+            color: #fff;
+            /* 向上移动文字 */
+            margin-top: -25px;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+        /* 设置新闻列表 */
+        .news-list{
+            margin-top: 20px;
+            padding-left: 16px;
+            /* 列表前方的点 */
+            list-style-type:square;
+            color: #dddddd;
+
+        }
+
+        .news-list li{
+            margin-bottom:17px ;
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: #666666; 
+        }
+        .news-list li a:hover{
+            color: #F04343;
+        }
+        /* 第二种列表前方点的实现方式
+            通过before伪元素，来为每一个li添加项目符号 */
+        /* .news-list li::before{
+            content:"■";
+            color:#666666;
+            
+
+        } */
+
+    </style>
+</head>
+<body>
+    <!--外围容器  -->
+    <div class="news-wrapper"> 
+<!-- 创建一个标题标签 -->
+        <h2 class="news-title">
+            <a href="#">体育</a>
+        </h2>
+
+        <!-- 图片容器 -->
+        <div class="news-img">
+            <a href="">
+                <img src="./所需图片/04.png" alt="新页面">
+            <!-- 图片标题 -->
+                    <h3 class="img-title">
+                        呼呼呼呼呼呼呼呼
+                    </h3>
+            </a>
+        </div>
+
+        <!-- 新闻列表 -->
+        <ul class="news-list">
+            <li><a href="">NBA第一美女助教：被俄罗斯归化的“美国叛</a></li>
+            <li><a href="">女篮世界的GOAT，WNBA的“大鸟”退役了</a></li>
+            <li><a href="">马德里被他疯狂抢戏 进球+黄牌+红牌猝不及</a></li>
+            <li><a href="">帕特里克-贝弗利：唯有矛盾可以预测</a></li>
+        </ul>
+    </div>
+   
+</body>
+</html>

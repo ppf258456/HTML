@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        li::before{
+            /* 
+                通过为元素来设置图标字体
+                    1.找到要设置图标的元素通过before或after选中
+                    2.在content中设置字体的编码 
+                    3.设置字体的样式
+            */
+            content: '\f837';
+            font-family:'Font Awesome 6 Brands' ;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>生生不息，绵延不绝</li>
+        <li>犯大吴疆土者，盛必击而破之</li>
+        <li>东吴烈火，终将熄灭</li>
+        <li>吾随年迈，箭矢犹锋</li>
+    </ul>
+    <!-- 通过实体来使用图标字体
+        &#x图标编码
+        -->
+    <li class="fas">
+        &#xf0f3;
+    </li>
+</body>
+</html>

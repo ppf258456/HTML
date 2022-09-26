@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            ::first-letter 首字母
+            ::first-line   第一行
+            ::selection    表示选中的内容
+            ::before       表示元素的开始位置
+            ::after        表示元素的结束位置 
+                before 与 after 必须结合content属性来使用
+            */
+        p{
+            font-size: 20px;
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+           background-color: yellow;
+        }
+        p::selection{
+            background-color: blue;
+        }
+        div::before{
+            content: "avc";
+            background-color: aquamarine;
+        }
+        div::after{
+            content: "12asdq";
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<!-- 伪元素：表示页面中一些特殊并不真实存在的元素（特殊的位置）
+        伪元素  ::开头 -->
+<body>
+    <div>芜湖芜湖呜呼</div>
+    <p>hhhhhhhhhhhhhhhhhhhhhhhh</p>
+    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01639c586c91bba801219c77f6efc8.gif&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1666004881&t=f88e7b2c74f94f9773db126c9cbb115b" alt="">
+</body>
+</html>

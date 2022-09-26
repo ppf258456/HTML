@@ -1,0 +1,30 @@
+/* 公用样式 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+body{
+    /* 限制页面最小宽度 */
+    min-width: 1226px;
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* 设置一个类，用来表示中间容器的宽度 */
+.w{
+    /* 固定容器的宽度 */
+   width: 1226px;
+    /* 设置容器居中 */
+    margin: 0 auto;
+}
+/* 设置中间的header */
+.header{
+    height: 100px;
+    background-color: #fff;
+   
+}
