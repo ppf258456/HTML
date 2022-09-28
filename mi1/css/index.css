@@ -353,3 +353,84 @@ ul.left-menu li a:hover{
 .prev-next .next:hover{
     background-position: -42px 0;
 }
+.back-top{
+    width: 34px;
+    height: 220px;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+    /* 开启固定定位 */
+    position: fixed;
+    bottom: 60px;
+    right: 50%;
+    /* 将right值设置为视口宽度的50% */
+      margin-right: -637px;
+    /* 
+        布局等式
+        left+margin-left+width+margin-right+right=包含块的宽度（视口宽度）
+
+        auto + 0 + 26 + 0 + 60 =视口宽度
+        auto + 0 + 26 + 0 + 50% =视口宽度
+
+    */
+}
+.back-top a{
+    background-repeat:no-repeat;
+    padding: 4px;
+    border: 1px solid #F5F5F5;
+    background-position: 3px;
+}
+.back-top .mobile-img{
+    display: block;
+    /* width: 34px; */
+    height: 34px;
+    background-image: url(../img/mobile.png);
+ 
+}
+.back-top .mobile-img:hover{
+    background-image: url(../img/mobile2.png);
+}
+.back-top .person-img{
+    display: block;
+    height: 34px;
+    background-image: url(../img/person.png);
+}
+.back-top .person-img:hover{
+    background-image: url(../img/person2.png);
+}
+.back-top .shouhou-img{
+    display: block;
+    /* width: 34px; */
+     height: 34px;
+    background-image: url(../img/ding.png);
+}
+.back-top .shouhou-img:hover{
+    background-image: url(../img/ding2.png);
+}
+.back-top .service-img{
+    display: block;
+    /* width: 34px; */
+    height: 34px;
+    background-image:url(../img/service.png) ;
+}
+.back-top .service-img:hover{
+    background-image: url(../img/service2.png);
+}
+.back-top .shopcar-img{
+    display: block;
+    /* width: 34px; */
+    height: 34px;
+    background-image: url(../img/shopcar.png);
+}
+.back-top .shopcar-img:hover{
+    background-image: url(../img/shopcar2.png);
+}
+ /*设置下方广告区域  */
+ .ad{
+    background-color: yellow;
+    height: 170px;
+    margin-top: 14px;
+    
+
+}
+
+
