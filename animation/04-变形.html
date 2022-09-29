@@ -34,7 +34,19 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translateX(-50%),translateY(50%);
+            transform: translateX(-50%) translateY(50%);
+        }
+        .box4,.box5{
+            width: 220px;
+            height: 300px;
+            background-color: #b0b0b0;
+            float: left;
+            margin: 0 10px;
+            transition:all .3s;
+        }
+        .box4:hover{
+            transform: translateY(-4px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         }
     </style>
 </head>
@@ -44,5 +56,7 @@
     <div class="box3">
         ccc
     </div>
+    <div class="box4"></div>
+    <div class="box5"></div>
 </body>
 </html>

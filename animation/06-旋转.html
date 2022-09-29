@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z轴平移</title>
+    <style>
+  
+        body{
+             /* 设置当前网页的视距为800px 人眼距离网页的距离 */
+            perspective: 800px;
+            border: 1px solid red;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 200px auto;
+            transition:all 1s;
+            animation: zhuan infinite 2s linear;
+           
+        }
+        body:hover .box1{
+           /* 
+           通过旋转可以使元素沿着x y 或者 z旋转指定角度
+
+
+           rotateX()
+           rotateY()
+           rotateZ()
+           */
+           /* transform: rotateZ(45deg); */
+           /* 是否显示元素的背面
+                默认为visible 显示
+                      hidden  隐藏
+
+           */
+           backface-visibility: visible;
+        }
+        @keyframes zhuan {
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(1turn);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>
